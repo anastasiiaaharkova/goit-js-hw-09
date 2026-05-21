@@ -1,0 +1,37 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.gallery li {
+    display: flex;
+    flex-direction: row;
+    row-gap: 24px;
+    column-gap: 24px;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-item {
+    width: 360px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    transition: transform 250ms ease-in-out;
+    cursor: zoom-in;
+}
